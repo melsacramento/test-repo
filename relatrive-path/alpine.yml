@@ -1,0 +1,11 @@
+version: '3'
+services:
+ large-app:
+  image: alpine
+  volumes:
+      - ../html:/home/html
+  tty: true
+  stdin_open: true
+  environment:
+   - hello=hi
+   - fire=bending
